@@ -2,17 +2,17 @@
 terraform {
   required_version = ">=0.12.0"
   # Backend for configuring remote state files to Azure Storage
-  backend "azurerm" {
-  }
-  // backend "remote" {
-  //     # The name of your Terraform Cloud organization.
-  //     organization = "AdinErmie"
-
-  //     # The name of the Terraform Cloud workspace to store Terraform state files in.
-  //     workspaces {
-  //         name = "GitHub-IAC-Terraform"
-  //     }
+  // backend "azurerm" {
   // }
+  backend "remote" {
+      # The name of your Terraform Cloud organization.
+      organization = "AdinErmie"
+
+      # The name of the Terraform Cloud workspace to store Terraform state files in.
+      workspaces {
+          name = "TFCloud-IaC-Using-Terraform"
+      }
+  }
 }
 
 # Configure the Azure Provider
