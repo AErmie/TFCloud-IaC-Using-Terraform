@@ -10,7 +10,7 @@ terraform {
 
       # The name of the Terraform Cloud workspace to store Terraform state files in.
       workspaces {
-          name = "TFCloud-IaC-Using-Terraform"
+          name = "TFCloud-IaC-Using-Terraform--HubDeploy"
       }
   }
 }
