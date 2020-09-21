@@ -1,4 +1,4 @@
-HubExpressRoute-RGName                 = "SharedServicesRG"
+HubExpressRoute-RGName                 = "SharedServicesRG-TFC"
 HubExpressRoute-Location               = "CanadaCentral"
 HubExpressRoute-ServiceProviderName    = "AT&T Netbond"
 HubExpressRoute-PeeringLocation        = "Toronto"

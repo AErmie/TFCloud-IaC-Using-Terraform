@@ -1,3 +1,17 @@
+variable "subscription_id" {
+    description = "Subscription ID"
+}
+variable "client_id" {
+    description = "Client ID"
+}
+variable "client_secret" {
+    description = "Client Secret"
+}
+variable "tenant_id" {
+    description = "Tenant ID"
+}
+
+
 variable "HubExpressRoute-PeeringLocation" {
   type        = string
   description = "The name of the peering location and not the Azure resource location."

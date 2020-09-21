@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "Spoke-NonProd-RG" {
-  name     = "NonProdSpokeRG"
+  name     = "NonProdSpokeRG-TFC"
   location = var.NonProd-ResourceGroupLocation
   tags = {
     Environment = var.Environment
