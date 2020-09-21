@@ -21,7 +21,7 @@ terraform {
   backend "remote" {
     organization = "AdinErmie"
     workspaces {
-      name = "HA-DR-Infrastructure-Examples-Compute-DC"
+      name = "TFCloud-IaC-Using-Terraform--DomainControllerDeploy"
     }
   }
 }
