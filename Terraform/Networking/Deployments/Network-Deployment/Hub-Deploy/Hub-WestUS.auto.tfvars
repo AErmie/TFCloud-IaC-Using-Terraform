@@ -6,7 +6,7 @@ SharedServices-DomainControllerSubnet-AddressPrefix = "10.0.3.0/24"
 
 EnableVPNGateway = false
 EnableERGateway  = false
-EnableAFW  = false
+EnableAFW  = true
 
 Hub-VPNGateway-ActiveActiveEnabled = false
 Hub-ERGateway-ActiveActiveEnabled  = false
