@@ -1,9 +1,14 @@
 data "azurerm_virtual_network" "SharedServicesVNET" {
   name                = "SharedServicesVNET"
-  resource_group_name = "SharedServicesRG-TF"
+  resource_group_name = "SharedServicesRG"
 }
 
 data "azurerm_virtual_network" "ProdVNET" {
   name                = "Prod-VNET"
-  resource_group_name = "ProdSpokeRG-TF"
+  resource_group_name = "ProdSpokeRG"
+}
+
+data "azurerm_virtual_network" "NonProdVNET" {
+  name                = "NonProd-VNET"
+  resource_group_name = "NonProdSpokeRG"
 }

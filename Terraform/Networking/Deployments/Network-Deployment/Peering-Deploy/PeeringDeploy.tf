@@ -45,6 +45,9 @@ module "VNET-Peering" {
   HubVNet-AllowVNetAccess       = var.HubVNet-AllowVNetAccess
   HubVNet-AllowForwardedTraffic = var.HubVNet-AllowForwardedTraffic
   HubVNet-AllowGatewayTransit   = var.HubVNet-AllowGatewayTransit
+  // depends_on = [
+  //   module.vnets-SharedServices, module.vnets-Prod
+  // ]
 
   ProdVNet-RGName                = data.azurerm_virtual_network.ProdVNET.resource_group_name
   ProdVNet-Name                  = data.azurerm_virtual_network.ProdVNET.name
@@ -52,4 +55,11 @@ module "VNET-Peering" {
   ProdVNet-AllowVNetAccess       = var.ProdVNet-AllowVNetAccess
   ProdVNet-AllowForwardedTraffic = var.ProdVNet-AllowForwardedTraffic
   ProdVNet-AllowGatewayTransit   = var.ProdVNet-AllowGatewayTransit
+
+  NonProdVNet-RGName                = data.azurerm_virtual_network.NonProdVNET.resource_group_name
+  NonProdVNet-Name                  = data.azurerm_virtual_network.NonProdVNET.name
+  NonProdNetwork-ID                 = data.azurerm_virtual_network.NonProdVNET.id
+  NonProdVNet-AllowVNetAccess       = var.NonProdVNet-AllowVNetAccess
+  NonProdVNet-AllowForwardedTraffic = var.NonProdVNet-AllowForwardedTraffic
+  NonProdVNet-AllowGatewayTransit   = var.NonProdVNet-AllowGatewayTransit
 }

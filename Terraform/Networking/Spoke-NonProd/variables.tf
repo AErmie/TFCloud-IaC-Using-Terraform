@@ -1,28 +1,11 @@
-variable "Prod-ResourceGroupLocation" {
+variable "Environment" {
   type        = string
-  description = "The location to deploy the Resource Group."
+  description = "Environment tag."
 }
-
-variable "Prod-VNet-AddressSpace" {
+variable "CostCenter" {
   type        = string
-  description = "The address space (ie. 1.2.3.4/56) for the Prod VNet."
+  description = "CostCenter tag."
 }
-
-variable "Prod-WebSubnet-AddressPrefix" {
-  type        = string
-  description = "The address space (ie. 1.2.3.4/56) for the Web Subnet within the Prod VNet."
-}
-
-variable "Prod-AppSubnet-AddressPrefix" {
-  type        = string
-  description = "The address space (ie. 1.2.3.4/56) for the App Subnet within the Prod VNet."
-}
-
-variable "Prod-DataSubnet-AddressPrefix" {
-  type        = string
-  description = "The address space (ie. 1.2.3.4/56) for the Data Subnet within the Prod VNet."
-}
-
 
 variable "NonProd-ResourceGroupLocation" {
   type        = string

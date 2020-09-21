@@ -48,3 +48,15 @@ module "vnets-Prod" {
   Prod-AppSubnet-AddressPrefix  = var.Prod-AppSubnet-AddressPrefix
   Prod-DataSubnet-AddressPrefix = var.Prod-DataSubnet-AddressPrefix
 }
+
+module "vnets-NonProd" {
+  source      = "../../../Spoke-NonProd/"
+  Environment = "NonProd"
+  CostCenter  = "13579"
+
+  NonProd-ResourceGroupLocation    = var.NonProd-ResourceGroupLocation
+  NonProd-VNet-AddressSpace        = var.NonProd-VNet-AddressSpace
+  NonProd-WebSubnet-AddressPrefix  = var.NonProd-WebSubnet-AddressPrefix
+  NonProd-AppSubnet-AddressPrefix  = var.NonProd-AppSubnet-AddressPrefix
+  NonProd-DataSubnet-AddressPrefix = var.NonProd-DataSubnet-AddressPrefix
+}

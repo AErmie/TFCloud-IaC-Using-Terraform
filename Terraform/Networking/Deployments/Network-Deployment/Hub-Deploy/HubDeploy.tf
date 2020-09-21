@@ -47,4 +47,20 @@ module "vnets-SharedServices" {
   SharedServices-GatewaySubnet-AddressPrefix          = var.SharedServices-GatewaySubnet-AddressPrefix
   SharedServices-DomainControllerSubnet-AddressPrefix = var.SharedServices-DomainControllerSubnet-AddressPrefix
   SharedServices-AzureFirewallSubnet-AddressPrefix    = var.SharedServices-AzureFirewallSubnet-AddressPrefix
+
+  EnableVPNGateway = var.EnableVPNGateway
+  EnableERGateway  = var.EnableERGateway
+  EnableAFW  = var.EnableAFW
+
+  Hub-VPNGateway-ActiveActiveEnabled = var.Hub-VPNGateway-ActiveActiveEnabled
+  Hub-ERGateway-ActiveActiveEnabled  = var.Hub-ERGateway-ActiveActiveEnabled
+
+  Hub-VPNGateway-BGPEnabled = var.Hub-VPNGateway-BGPEnabled
+  Hub-ERGateway-BGPEnabled  = var.Hub-ERGateway-BGPEnabled
+
+  Hub-ERGateway-SKU  = var.Hub-ERGateway-SKU
+  Hub-VPNGateway-SKU = var.Hub-VPNGateway-SKU
+
+  AFWPIP-AllocationMethod = var.AFWPIP-AllocationMethod
+  AFWPIP-SKU              = var.AFWPIP-SKU
 }
